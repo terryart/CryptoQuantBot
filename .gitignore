@@ -1,8 +1,26 @@
+# Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
 .venv/
 venv/
+
+# Secrets / local configuration
 .env
 .env.*
-.coverage
+!.env.example
+*.key
+*.pem
+secrets/
+
+# Downloaded market data and generated reports
+data/
+reports/
+
+# Editors / OS
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db

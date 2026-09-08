@@ -1,0 +1,15 @@
+[project]
+name = "cryptoquantbot"
+version = "0.2.0"
+description = "Deterministic crypto strategy research and walk-forward evaluation toolkit"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Terry Arthur" }]
+keywords = ["crypto", "backtesting", "quantitative-finance", "trading-strategy", "python"]
+
+[project.scripts]
+cryptoquantbot = "cryptoquantbot:main"
+
+[tool.unittest]
+start-directory = "."
+pattern = "test_*.py"
